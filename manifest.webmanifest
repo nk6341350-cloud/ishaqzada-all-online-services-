@@ -1,0 +1,10 @@
+{
+  "name": "Ishaqzada Online Services",
+  "short_name": "Ishaqzada",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f4f2",
+  "theme_color": "#004b35",
+  "lang": "ps",
+  "dir": "rtl"
+}
