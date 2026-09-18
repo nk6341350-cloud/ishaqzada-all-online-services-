@@ -1,1 +1,4 @@
-let deferredPrompt=null;addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e});document.querySelector("#installBtn").onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null}else alert("د موبایل د براوزر له Install / Add to Home Screen څخه استفاده وکړئ.")};const m=document.querySelector("#modal");document.querySelectorAll(".service").forEach(b=>b.onclick=()=>m.hidden=false);document.querySelector("#ok").onclick=()=>m.hidden=true;if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("./sw.js"));
+const modal=document.getElementById('modal'),title=document.getElementById('modalTitle');
+document.querySelectorAll('.service').forEach(b=>b.onclick=()=>{title.textContent=b.querySelector('b').textContent;modal.hidden=false});
+document.getElementById('registerBtn').onclick=()=>{title.textContent='ځان ثبت کړئ';modal.hidden=false};
+document.getElementById('ok').onclick=()=>modal.hidden=true;modal.onclick=e=>{if(e.target===modal)modal.hidden=true};
