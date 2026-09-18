@@ -15,3 +15,21 @@ html,body{width:100%;max-width:100%;overflow-x:hidden;background:#003d2f}
 .finder>*{min-width:0}
 .nav{left:0;right:0;transform:none;width:100%;max-width:none}
 @media(min-width:700px){.app{max-width:520px;margin:0 auto;box-shadow:0 0 40px #0003}.nav{left:50%;right:auto;transform:translateX(-50%);max-width:520px}}
+/* 2026-09 final requested fit: one mobile screen, centered full vehicle images */
+@media (max-width:699px){
+ html,body{height:100%;min-height:100%;overflow:hidden}
+ .app{height:100svh;min-height:0;padding-bottom:0;display:grid;grid-template-rows:22svh 9svh 52svh 10svh 7svh;overflow:hidden}
+ .hero{height:auto;min-height:0;background:
+   radial-gradient(circle at 15% 70%,#0c674d 0 8%,transparent 9%),
+   radial-gradient(circle at 85% 65%,#0a5c45 0 10%,transparent 11%),
+   linear-gradient(145deg,#006048,#003d2f 55%,#002e24);border-bottom:1px solid #d7aa39}
+ .hero .shade{background:linear-gradient(135deg,transparent 0 35%,#f0c75a12 36% 37%,transparent 38% 62%,#f0c75a10 63% 64%,transparent 65%)}
+ .lang{top:7px;right:12px;font-size:10px}.crown{padding-top:22px;font-size:37px}.hero h1{font-size:39px;margin-top:5px}.hero h2{font-size:21px}.hero p{font-size:12px;margin:5px 0}
+ .finder{height:calc(100% - 8px);margin:-4px 12px 4px;padding:5px;gap:5px;border-radius:14px;align-self:center}.loc,.search{height:100%;min-height:0;border-radius:10px;padding:5px}.loc{font-size:13px}.loc small{font-size:7px}.loc b{font-size:11px}.search{font-size:18px}.search input{font-size:10px}
+ .services{height:100%;padding:3px 12px 5px;gap:6px;grid-template-rows:repeat(3,1fr);min-height:0}
+ .service{height:100%;min-height:0;border-radius:14px;display:grid;grid-template-rows:minmax(0,1fr) 45px;border-width:1.5px}
+ .service img{width:100%;height:100%;min-height:0;object-fit:contain;object-position:center;background:#f7f5ef;padding:2px}
+ .service>div{height:45px;padding:4px 7px}.service b{font-size:14px;line-height:18px}.service small{font-size:7.5px;margin-top:1px;padding-left:24px}.service i{left:7px;bottom:7px;width:24px;height:24px;border-radius:8px;font-size:19px}
+ .install{height:calc(100% - 8px);min-height:0;margin:4px 12px;width:calc(100% - 24px);border-radius:14px;padding:5px 9px;gap:8px}.install .phone{width:43px;height:45px;border-width:3px;font-size:25px}.install b{font-size:15px}.install small{font-size:9px;margin-top:2px}.install i{width:29px;height:29px;font-size:22px}
+ .nav{position:relative;left:auto;right:auto;bottom:auto;transform:none;height:100%;max-width:none;padding-bottom:env(safe-area-inset-bottom)}.nav button{font-size:19px}.nav span{font-size:8px;margin-top:0}
+}
